@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waypoint — Find places, hotels &amp; shops worldwide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero{
+    min-height:100svh;display:flex;align-items:center;position:relative;
+    padding-top:100px;padding-bottom:60px;overflow:hidden;
+  }
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+  .hero-copy h1{font-size:clamp(40px,6vw,64px);}
+  .hero-copy .accent{color:var(--accent);}
+  .hero-copy p{color:var(--text-dim);max-width:440px;margin-top:20px;font-size:17px;}
+  .hero-cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  #globe-wrap{
+    position:relative;aspect-ratio:1/1;max-width:480px;margin:0 auto;
+  }
+  #globe-canvas{width:100%;height:100%;display:block;}
+  .globe-fallback{
+    position:absolute;inset:8%;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, var(--accent-2), var(--panel) 70%);
+    display:none;
+  }
+  .globe-ring{
+    position:absolute;inset:-6%;border:1px dashed var(--line);border-radius:50%;
+    animation:spin 40s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  @media (prefers-reduced-motion: reduce){.globe-ring{animation:none;}}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    #globe-wrap{order:-1;max-width:320px;}
+  }
+</style>
+</head>
+<body>
+<div class="parallax-bg" data-parallax="0.12"></div>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Waypoint<span class="dot">.</span></div>
+    <nav class="navlinks">
+      <a href="index.html" class="active">Explore</a>
+      <a href="usa.html">USA</a>
+      <a href="uk.html">UK</a>
+      <a href="russia.html">Russia</a>
+      <a href="australia.html">Australia</a>
+    </nav>
+    <button class="navtoggle">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="sec-eyebrow">Places · Hotels · Shops</div>
+      <h1>Find your way<br>to the <span class="accent">right place.</span></h1>
+      <p>One map, four countries. Search real landmarks, book-worthy hotels, and local shops across the USA, UK, Russia, and Australia — no endless tabs.</p>
+      <div class="hero-cta">
+        <a href="#countries" class="btn btn-primary">Start exploring</a>
+        <a href="usa.html" class="btn btn-ghost">Jump to USA →</a>
+      </div>
+    </div>
+    <div id="globe-wrap" data-parallax="-0.1">
+      <div class="globe-ring"></div>
+      <canvas id="globe-canvas"></canvas>
+      <div class="globe-fallback" id="globe-fallback"></div>
+    </div>
+  </div>
+</section>
+
+<section id="countries">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">04 destinations live</div>
+      <h2 class="sec-title">Pick a country</h2>
+      <p class="sec-sub">Each destination page lists top places to visit, hotels to stay, and shops worth a stop — with search built in.</p>
+    </div>
+    <div class="country-grid">
+      <a href="usa.html" class="country-card reveal">
+        <div class="country-flagcode">US · NORTH AMERICA</div>
+        <div class="country-name">United States</div>
+        <div class="country-tag">Coast-to-coast cities, national parks &amp; road-trip stops</div>
+        <div class="country-arrow">↗</div>
+      </a>
+      <a href="uk.html" class="country-card reveal">
+        <div class="country-flagcode">UK · EUROPE</div>
+        <div class="country-name">United Kingdom</div>
+        <div class="country-tag">Historic capitals, castles &amp; countryside villages</div>
+        <div class="country-arrow">↗</div>
+      </a>
+      <a href="russia.html" class="country-card reveal">
+        <div class="country-flagcode">RU · EURASIA</div>
+        <div class="country-name">Russia</div>
+        <div class="country-tag">Grand architecture, art cities &amp; the trans-continental rail</div>
+        <div class="country-arrow">↗</div>
+      </a>
+      <a href="australia.html" class="country-card reveal">
+        <div class="country-flagcode">AU · OCEANIA</div>
+        <div class="country-name">Australia</div>
+        <div class="country-tag">Reef coastlines, outback icons &amp; harbour cities</div>
+        <div class="country-arrow">↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Why Waypoint</div>
+      <h2 class="sec-title">Built for actually planning a trip</h2>
+    </div>
+    <div class="country-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="country-card reveal">
+        <div class="country-flagcode">01</div>
+        <div class="country-name" style="font-size:20px;">Real places, not lists</div>
+        <div class="country-tag">Every entry has a location, a rating, and why it's worth the stop.</div>
+      </div>
+      <div class="country-card reveal">
+        <div class="country-flagcode">02</div>
+        <div class="country-name" style="font-size:20px;">Search that works</div>
+        <div class="country-tag">Filter places, hotels, and shops instantly on every country page.</div>
+      </div>
+      <div class="country-card reveal">
+        <div class="country-flagcode">03</div>
+        <div class="country-name" style="font-size:20px;">One layout, four countries</div>
+        <div class="country-tag">Learn it once — every destination page works the same way.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="mono">© 2026 Waypoint. Plan less, go more.</div>
+    <div class="foot-links">
+      <a href="usa.html">USA</a>
+      <a href="uk.html">UK</a>
+      <a href="russia.html">Russia</a>
+      <a href="australia.html">Australia</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+<script>
+  // 3D rotating globe hero
+  (function(){
+    const canvas = document.getElementById('globe-canvas');
+    const fallback = document.getElementById('globe-fallback');
+    const wrap = document.getElementById('globe-wrap');
+    if(!window.THREE || !canvas){ if(fallback) fallback.style.display='block'; return; }
+
+    try{
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+      camera.position.z = 3.2;
+
+      const renderer = new THREE.WebGLRenderer({canvas, alpha:true, antialias:true});
+      function resize(){
+        const size = wrap.clientWidth;
+        renderer.setSize(size, size, false);
+        camera.aspect = 1;
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      const group = new THREE.Group();
+      scene.add(group);
+
+      // wireframe globe
+      const geo = new THREE.SphereGeometry(1.15, 28, 22);
+      const mat = new THREE.MeshBasicMaterial({color:0x4bb8a9, wireframe:true, transparent:true, opacity:0.55});
+      const sphere = new THREE.Mesh(geo, mat);
+      group.add(sphere);
+
+      // inner solid core for depth
+      const coreGeo = new THREE.SphereGeometry(1.0, 24, 18);
+      const coreMat = new THREE.MeshBasicMaterial({color:0x122631, transparent:true, opacity:0.85});
+      group.add(new THREE.Mesh(coreGeo, coreMat));
+
+      // scattered points as "cities"
+      const pts = [];
+      for(let i=0;i<90;i++){
+        const phi = Math.acos(-1 + (2*i)/90);
+        const theta = Math.sqrt(90*Math.PI)*phi;
+        const r = 1.16;
+        pts.push(
+          r*Math.cos(theta)*Math.sin(phi),
+          r*Math.sin(theta)*Math.sin(phi),
+          r*Math.cos(phi)
+        );
+      }
+      const ptGeo = new THREE.BufferGeometry();
+      ptGeo.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+      const ptMat = new THREE.PointsMaterial({color:0xe4732f, size:0.028});
+      group.add(new THREE.Points(ptGeo, ptMat));
+
+      let mouseX = 0, mouseY = 0;
+      window.addEventListener('mousemove', (e)=>{
+        mouseX = (e.clientX / window.innerWidth - 0.5);
+        mouseY = (e.clientY / window.innerHeight - 0.5);
+      });
+
+      let reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function animate(){
+        requestAnimationFrame(animate);
+        if(!reduced){
+          group.rotation.y += 0.0028;
+          group.rotation.x += (mouseY*0.4 - group.rotation.x)*0.02;
+          group.rotation.y += (mouseX*0.2)*0.001;
+        }
+        renderer.render(scene, camera);
+      }
+      animate();
+    }catch(err){
+      if(fallback) fallback.style.display = 'block';
+      canvas.style.display = 'none';
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>United States — Waypoint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="parallax-bg" data-parallax="0.12"></div>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Waypoint<span class="dot">.</span></div>
+    <nav class="navlinks">
+      <a href="index.html">Explore</a>
+      <a href="usa.html" class="active">USA</a>
+      <a href="uk.html">UK</a>
+      <a href="russia.html">Russia</a>
+      <a href="australia.html">Australia</a>
+    </nav>
+    <button class="navtoggle">☰</button>
+  </div>
+</header>
+
+<section class="country-hero">
+  <div class="wrap">
+    <div class="sec-eyebrow">US · North America</div>
+    <h1>United States</h1>
+    <p>Coast-to-coast: national parks, big-city skylines, and everything in between. Search below to filter by name.</p>
+    <div class="country-stats">
+      <div><div class="num">6</div><div class="lbl">Places to visit</div></div>
+      <div><div class="num">4</div><div class="lbl">Hotels</div></div>
+      <div><div class="num">4</div><div class="lbl">Restaurants</div></div>
+      <div><div class="num">4</div><div class="lbl">Shopping stops</div></div>
+      <div><div class="num">4</div><div class="lbl">Time zones</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="places" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Places to visit</div>
+      <h2 class="sec-title">Landmarks worth the trip</h2>
+    </div>
+    <div class="search-bar reveal">
+      <input type="text" placeholder="Search places, hotels, shops…" data-search aria-label="Search United States listings">
+    </div>
+    <div class="search-count mono" data-search-count></div>
+
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Landmark</div></div>
+          <div class="pass-name">Statue of Liberty</div>
+          <div class="pass-loc">New York, NY</div>
+          <div class="pass-desc">Ferry out to Liberty Island for the closest view of the harbor icon and its museum.</div>
+          <div class="pass-meta"><span class="rating">★ 4.7</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Statue%20of%20Liberty%20New%20York%2C%20NY" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Natural wonder</div></div>
+          <div class="pass-name">Grand Canyon</div>
+          <div class="pass-loc">Arizona</div>
+          <div class="pass-desc">Rim trails, sunrise viewpoints, and mule rides into one of the world's largest canyons.</div>
+          <div class="pass-meta"><span class="rating">★ 4.9</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Grand%20Canyon%20Arizona" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">GCN</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Landmark</div></div>
+          <div class="pass-name">Golden Gate Bridge</div>
+          <div class="pass-loc">San Francisco, CA</div>
+          <div class="pass-desc">Walk or bike across the span, then loop back through Crissy Field for the classic photo.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Golden%20Gate%20Bridge%20San%20Francisco%2C%20CA" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SFO</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">City</div></div>
+          <div class="pass-name">Times Square</div>
+          <div class="pass-loc">New York, NY</div>
+          <div class="pass-desc">Neon, Broadway marquees, and 24-hour energy at the crossroads of the world.</div>
+          <div class="pass-meta"><span class="rating">★ 4.4</span><span>Open 24h</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Times%20Square%20New%20York%2C%20NY" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">National park</div></div>
+          <div class="pass-name">Yellowstone</div>
+          <div class="pass-loc">Wyoming</div>
+          <div class="pass-desc">Geysers, hot springs, and wildlife across America's first national park.</div>
+          <div class="pass-meta"><span class="rating">★ 4.9</span><span>Seasonal</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Yellowstone%20Wyoming" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">YLW</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Theme park</div></div>
+          <div class="pass-name">Walt Disney World</div>
+          <div class="pass-loc">Orlando, FL</div>
+          <div class="pass-desc">Four theme parks and two water parks built around Cinderella Castle.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Walt%20Disney%20World%20Orlando%2C%20FL" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">MCO</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hotels" style="border-top:1px solid var(--line);" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Where to stay</div>
+      <h2 class="sec-title">Hotels across the country</h2>
+    </div>
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">The Plaza</div>
+          <div class="pass-loc">New York, NY</div>
+          <div class="pass-desc">Landmark hotel on Central Park South, in operation since 1907.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>$$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.booking.com/searchresults.html?ss=The%20Plaza%20New%20York%2C%20NY" target="_blank" rel="noopener">Book now ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">The Beverly Hills Hotel</div>
+          <div class="pass-loc">Los Angeles, CA</div>
+          <div class="pass-desc">The "Pink Palace," a favorite of the entertainment industry since 1912.</div>
+          <div class="pass-meta"><span class="rating">★ 4.7</span><span>$$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.booking.com/searchresults.html?ss=The%20Beverly%20Hills%20Hotel%20Los%20Angeles%2C%20CA" target="_blank" rel="noopener">Book now ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">LAX</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">The Venetian</div>
+          <div class="pass-loc">Las Vegas, NV</div>
+          <div class="pass-desc">All-suite resort with indoor canals and gondola rides on the Strip.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.booking.com/searchresults.html?ss=The%20Venetian%20Las%20Vegas%2C%20NV" target="_blank" rel="noopener">Book now ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">LAS</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">Fairmont San Francisco</div>
+          <div class="pass-loc">San Francisco, CA</div>
+          <div class="pass-desc">Nob Hill hotel with sweeping bay views, open since 1907.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.booking.com/searchresults.html?ss=Fairmont%20San%20Francisco%20San%20Francisco%2C%20CA" target="_blank" rel="noopener">Book now ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SFO</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="restaurants" style="border-top:1px solid var(--line);" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Where to eat</div>
+      <h2 class="sec-title">Restaurants worth booking ahead</h2>
+    </div>
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Restaurant</div></div>
+          <div class="pass-name">Katz's Delicatessen</div>
+          <div class="pass-loc">New York, NY</div>
+          <div class="pass-desc">The pastrami-on-rye institution since 1888, made famous on screen and off.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.opentable.com/s?term=Katz%27s%20Delicatessen%20New%20York%2C%20NY&covers=2" target="_blank" rel="noopener">Reserve a table ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Restaurant</div></div>
+          <div class="pass-name">Peter Luger Steak House</div>
+          <div class="pass-loc">Brooklyn, NY</div>
+          <div class="pass-desc">No-menu, cash-leaning steakhouse serving dry-aged porterhouse since 1887.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>$$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.opentable.com/s?term=Peter%20Luger%20Steak%20House%20Brooklyn%2C%20NY&covers=2" target="_blank" rel="noopener">Reserve a table ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Restaurant</div></div>
+          <div class="pass-name">The French Laundry</div>
+          <div class="pass-loc">Yountville, CA</div>
+          <div class="pass-desc">Thomas Keller's tasting-menu landmark in the Napa Valley.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>$$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.opentable.com/s?term=The%20French%20Laundry%20Yountville%2C%20CA&covers=2" target="_blank" rel="noopener">Reserve a table ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SFO</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Restaurant</div></div>
+          <div class="pass-name">Le Bernardin</div>
+          <div class="pass-loc">New York, NY</div>
+          <div class="pass-desc">Seafood-focused fine dining, a Michelin three-star since 2005.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>$$$$</span></div>
+          <div class="pass-actions"><a class="pass-link book" href="https://www.opentable.com/s?term=Le%20Bernardin%20New%20York%2C%20NY&covers=2" target="_blank" rel="noopener">Reserve a table ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shops" style="border-top:1px solid var(--line);" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Where to shop</div>
+      <h2 class="sec-title">Shopping districts &amp; markets</h2>
+    </div>
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Shopping</div></div>
+          <div class="pass-name">Fifth Avenue</div>
+          <div class="pass-loc">New York, NY</div>
+          <div class="pass-desc">Flagship stores from the world's biggest fashion and jewelry houses.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Fifth%20Avenue%20New%20York%2C%20NY" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">NYC</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Shopping</div></div>
+          <div class="pass-name">Rodeo Drive</div>
+          <div class="pass-loc">Beverly Hills, CA</div>
+          <div class="pass-desc">Three palm-lined blocks of luxury boutiques and designer flagships.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Rodeo%20Drive%20Beverly%20Hills%2C%20CA" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">LAX</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Shopping</div></div>
+          <div class="pass-name">Union Square</div>
+          <div class="pass-loc">San Francisco, CA</div>
+          <div class="pass-desc">Department stores and boutiques around a central plaza and cable car line.</div>
+          <div class="pass-meta"><span class="rating">★ 4.4</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=Union%20Square%20San%20Francisco%2C%20CA" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SFO</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Market</div></div>
+          <div class="pass-name">French Quarter Market</div>
+          <div class="pass-loc">New Orleans, LA</div>
+          <div class="pass-desc">Open-air market for local crafts, spices, and Creole food stalls since 1791.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>Open daily</span></div>
+          <div class="pass-actions"><a class="pass-link" href="https://www.google.com/maps/search/?api=1&query=French%20Quarter%20Market%20New%20Orleans%2C%20LA" target="_blank" rel="noopener">View on map ↗</a></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">MSY</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="mono">© 2026 Waypoint. Plan less, go more.</div>
+    <div class="foot-links">
+      <a href="index.html">Explore</a>
+      <a href="uk.html">UK</a>
+      <a href="russia.html">Russia</a>
+      <a href="australia.html">Australia</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
