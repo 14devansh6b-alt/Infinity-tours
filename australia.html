@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Australia — Waypoint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Waypoint<span class="dot">.</span></div>
+    <nav class="navlinks">
+      <a href="index.html">Explore</a>
+      <a href="usa.html">USA</a>
+      <a href="uk.html">UK</a>
+      <a href="russia.html">Russia</a>
+      <a href="australia.html" class="active">Australia</a>
+    </nav>
+    <button class="navtoggle">☰</button>
+  </div>
+</header>
+
+<section class="country-hero">
+  <div class="wrap">
+    <div class="sec-eyebrow">AU · Oceania</div>
+    <h1>Australia</h1>
+    <p>Reef coastlines, outback icons, and harbour cities. Search below to filter.</p>
+    <div class="country-stats">
+      <div><div class="num">6</div><div class="lbl">Places to visit</div></div>
+      <div><div class="num">4</div><div class="lbl">Hotels</div></div>
+      <div><div class="num">4</div><div class="lbl">Shopping stops</div></div>
+      <div><div class="num">3</div><div class="lbl">Time zones</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="places" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Places to visit</div>
+      <h2 class="sec-title">Landmarks worth the trip</h2>
+    </div>
+    <div class="search-bar reveal">
+      <input type="text" placeholder="Search places, hotels, shops…" data-search aria-label="Search Australia listings">
+    </div>
+    <div class="search-count mono" data-search-count></div>
+
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Landmark</div></div>
+          <div class="pass-name">Sydney Opera House</div>
+          <div class="pass-loc">Sydney, NSW</div>
+          <div class="pass-desc">Shell-roofed performance venue on Sydney Harbour, a UNESCO World Heritage site.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>Tours daily</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SYD</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Natural wonder</div></div>
+          <div class="pass-name">Great Barrier Reef</div>
+          <div class="pass-loc">Queensland</div>
+          <div class="pass-desc">The world's largest coral reef system — snorkel, dive, or fly over it.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>Tours seasonal</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">CNS</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Natural wonder</div></div>
+          <div class="pass-name">Uluru</div>
+          <div class="pass-loc">Northern Territory</div>
+          <div class="pass-desc">The vast sandstone monolith sacred to the Anangu people, best at sunrise.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>Open daily</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">AYQ</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Beach</div></div>
+          <div class="pass-name">Bondi Beach</div>
+          <div class="pass-loc">Sydney, NSW</div>
+          <div class="pass-desc">Sydney's most famous beach, with the coastal Bondi-to-Coogee walk alongside.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>Open daily</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SYD</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Road trip</div></div>
+          <div class="pass-name">Great Ocean Road</div>
+          <div class="pass-loc">Victoria</div>
+          <div class="pass-desc">Coastal drive past the Twelve Apostles rock formations.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>Open daily</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">MEL</span></div>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">National park</div></div>
+          <div class="pass-name">Kakadu National Park</div>
+          <div class="pass-loc">Northern Territory</div>
+          <div class="pass-desc">Wetlands, waterfalls, and Aboriginal rock art spanning 20,000 sq km.</div>
+          <div class="pass-meta"><span class="rating">★ 4.7</span><span>Seasonal</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">DRW</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hotels" style="border-top:1px solid var(--line);" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Where to stay</div>
+      <h2 class="sec-title">Hotels across the country</h2>
+    </div>
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">Park Hyatt Sydney</div>
+          <div class="pass-loc">Sydney, NSW</div>
+          <div class="pass-desc">Harbourside hotel with Opera House and Bridge views from every room.</div>
+          <div class="pass-meta"><span class="rating">★ 4.8</span><span>$$$$</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SYD</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">Crown Towers</div>
+          <div class="pass-loc">Melbourne, VIC</div>
+          <div class="pass-desc">Riverside luxury tower on the Yarra, part of the Crown complex.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>$$$</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">MEL</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">QT Gold Coast</div>
+          <div class="pass-loc">Gold Coast, QLD</div>
+          <div class="pass-desc">Design-forward beachside hotel near Surfers Paradise.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>$$$</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">OOL</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Hotel</div></div>
+          <div class="pass-name">Cable Beach Club Resort</div>
+          <div class="pass-loc">Broome, WA</div>
+          <div class="pass-desc">Beachfront bungalows steps from Cable Beach's famous sunsets.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>$$$</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">BME</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shops" style="border-top:1px solid var(--line);" data-search-scope>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Where to shop</div>
+      <h2 class="sec-title">Shopping districts &amp; markets</h2>
+    </div>
+    <div class="pass-grid">
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Market</div></div>
+          <div class="pass-name">Queen Victoria Market</div>
+          <div class="pass-loc">Melbourne, VIC</div>
+          <div class="pass-desc">Open-air market for fresh produce, food stalls, and local goods since 1878.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>Closed Mon &amp; Wed</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">MEL</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Market</div></div>
+          <div class="pass-name">The Rocks Markets</div>
+          <div class="pass-loc">Sydney, NSW</div>
+          <div class="pass-desc">Weekend markets for crafts and food in Sydney's oldest neighborhood.</div>
+          <div class="pass-meta"><span class="rating">★ 4.5</span><span>Weekends</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SYD</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Shopping</div></div>
+          <div class="pass-name">Pitt Street Mall</div>
+          <div class="pass-loc">Sydney, NSW</div>
+          <div class="pass-desc">Sydney's main retail strip, from department stores to designer flagships.</div>
+          <div class="pass-meta"><span class="rating">★ 4.4</span><span>Open daily</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">SYD</span></div>
+      </div>
+      <div class="pass reveal">
+        <div class="pass-main">
+          <div class="pass-thumb"><div class="ph">Add photo</div><div class="pass-cat">Market</div></div>
+          <div class="pass-name">Salamanca Market</div>
+          <div class="pass-loc">Hobart, TAS</div>
+          <div class="pass-desc">Weekly market along the historic Salamanca Place waterfront.</div>
+          <div class="pass-meta"><span class="rating">★ 4.6</span><span>Saturdays</span></div>
+        </div>
+        <div class="pass-stub"><span class="pass-code">HBA</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="mono">© 2026 Waypoint. Plan less, go more.</div>
+    <div class="foot-links">
+      <a href="index.html">Explore</a>
+      <a href="usa.html">USA</a>
+      <a href="uk.html">UK</a>
+      <a href="russia.html">Russia</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
